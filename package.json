@@ -1,0 +1,33 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "nuxt": "^3.12.3",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@nuxtjs/storybook": "^8.1.5",
+    "@storybook/addon-essentials": "^8.2.4",
+    "@storybook/addon-interactions": "^8.2.4",
+    "@storybook/addon-links": "^8.2.4",
+    "@storybook/addon-onboarding": "^8.2.4",
+    "@storybook/blocks": "^8.2.4",
+    "@storybook/test": "^8.2.4",
+    "@storybook/vue3": "^8.2.4",
+    "@storybook/vue3-vite": "^8.2.4",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "storybook": "^8.2.4",
+    "vite": "^5.3.4"
+  }
+}
