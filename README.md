@@ -46,7 +46,7 @@ yarn install
 
 ### Running the Application
 
-#### Nuxt Development Server
+#### Nuxt Development Server With Storybook
 
 Start the Nuxt development server:
 
@@ -57,8 +57,9 @@ yarn dev
 ```
 
 The application will be available at `http://localhost:3000`.
+At the same time, the Storybook will be available at `http://localhost:6006`.
 
-#### Storybook
+#### Storybook Only
 
 Start the Storybook development server:
 
