@@ -2,11 +2,23 @@
 
 This is a template repository for setting up a Nuxt 3 project with Storybook 8. This setup aims to streamline the integration of Storybook for building and documenting UI components in a Nuxt 3 application.
 
+## Known Issues
+
+You may encounter the following warning:
+
+```
+ WARN  Using vite.config.js is not supported together with Nuxt. Use options.vite instead. You can read more in https://nuxt.com/docs/api/nuxt-config#vite.
+```
+
+This warning suggests that using `vite.config.js` is not supported with Nuxt and advises to use `options.vite` in `nuxt.config.js`. However, when migrating the Vite configuration to `nuxt.config.js`, Storybook fails to start and throws errors. If you have any solutions to this issue, please share them.
+
+wariningがでますが、vite.config.jsの設定をnuxt.config.jsに移すと、storybookがエラーを起こして起動できない。解決法わかる方いたら教えてください
+
+
 ## Features
 
 - Nuxt 3 for modern web development
 - Storybook 8 for developing and testing UI components
-- Essential Storybook addons included for better development experience
 
 ## Getting Started
 
@@ -108,35 +120,7 @@ yarn build-storybook
 
 - `nuxt`: ^3.12.3
 - `vue`: latest
-- `@nuxtjs/storybook`: ^8.1.5
-
-### Dev Dependencies
-
-- `@storybook/vue3`: ^8.2.4
-- `@storybook/vue3-vite`: ^8.2.4
-- `@storybook/addon-essentials`: ^8.2.4
-- `@storybook/addon-interactions`: ^8.2.4
-- `@storybook/addon-links`: ^8.2.4
-- `@storybook/addon-onboarding`: ^8.2.4
-- `@storybook/blocks`: ^8.2.4
-- `@storybook/test`: ^8.2.4
-- `@chromatic-com/storybook`: ^1.6.1
-- `@vitejs/plugin-vue`: ^5.0.5
-- `vite`: ^5.3.4
-
-## Scripts
-
-- `dev`: Start the Nuxt development server
-- `build`: Build the Nuxt application
-- `generate`: Generate static files for the Nuxt application
-- `preview`: Preview the production build
-- `storybook`: Start the Storybook development server
-- `build-storybook`: Build the Storybook static files
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-```
-
-```
